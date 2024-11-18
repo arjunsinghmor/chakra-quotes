@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational Quotes</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .quote-container {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quote-container">
+        <h1>{{ quote.text }}</h1>
+        <p>- {{ quote.author }}</p>
+    </div>
+    <script>
+        const images = [
+            '/static/images/image1.jpg',
+            '/static/images/image2.jpg',
+            '/static/images/image3.jpg'
+        ];
+        let currentIndex = 0;
+        setInterval(() => {
+            document.body.style.backgroundImage = `url(${images[currentIndex]})`;
+            currentIndex = (currentIndex + 1) % images.length;
+        }, 5000);
+    </script>
+</body>
+</html>
