@@ -1,3 +1,6 @@
 # chakra-quotes
 
-$$ REMEMBER $$ WHO $$ YOU $$ ARE $$
+$$ REMEMBER $$
+$$  WHO $$ 
+$$  YOU $$
+$$  ARE $$
